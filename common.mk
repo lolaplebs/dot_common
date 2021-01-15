@@ -193,6 +193,7 @@ PRODUCT_PACKAGES += \
     libhwc2on1adapter \
     libgenlock \
     liboverlay \
+    libqdMetaData.vendor \
     libtinyxml \
     libqdMetaData \
     libqdMetaData.system \
@@ -540,6 +541,10 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_PACKAGES += \
     libaacwrapper \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+    libmediaextractorservice \
+    libminijail \
     libnl
 
 PRODUCT_BOOT_JARS += \
