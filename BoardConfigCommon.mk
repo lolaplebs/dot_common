@@ -67,19 +67,16 @@ BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_ena
 BOARD_KERNEL_CMDLINE += service_locator.enable=1 swiotlb=2048 androidboot.usbconfigfs=true 
 BOARD_KERNEL_CMDLINE += androidboot.usbcontroller=a800000.dwc3 
 BOARD_KERNEL_CMDLINE += loop.max_part=7
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+#BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive Let's enforce.
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_TAGS_OFFSET := 0x01E00000
 BOARD_RAMDISK_OFFSET     := 0x02000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/oneplus/msm8998
-TARGET_KERNEL_CONFIG := lazy_defconfig
+TARGET_KERNEL_CONFIG := tanjiro_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := proton
+
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
