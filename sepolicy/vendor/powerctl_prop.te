@@ -1,0 +1,1 @@
+allow powerctl_prop powerctl_prop:file { read };

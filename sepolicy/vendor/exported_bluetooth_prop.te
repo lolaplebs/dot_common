@@ -1,0 +1,2 @@
+allow exported_bluetooth_prop 
+exported_bluetooth_prop:property_service { set };

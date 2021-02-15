@@ -1,0 +1,1 @@
+allow persist_debug_prop persist_debug_prop:file { read };

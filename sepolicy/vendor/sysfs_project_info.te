@@ -1,0 +1,1 @@
+allow sysfs_project_info sysfs_project_info:dir { search };

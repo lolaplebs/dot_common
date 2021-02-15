@@ -7,3 +7,4 @@ hwbinder_use(hal_param_default)
 add_hwservice(hal_param_default, hal_param_hwservice)
 
 get_prop(hal_param_default, hwservicemanager_prop)
+allow hal_param_default hal_param_default:socket { create };

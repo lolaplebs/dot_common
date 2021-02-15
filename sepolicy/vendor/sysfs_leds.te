@@ -1,0 +1,1 @@
+allow sysfs_leds sysfs_leds:lnk_file { read };
